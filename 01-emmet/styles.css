@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(rgb(210, 131, 237), rgb(0, 0, 0));
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+}
+main {
+    margin: 40px auto;
+    width: 450px;
+}
+main h1 {
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+main h1 a:link,
+main h1 a:visited {
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    float: left;
+    padding: 0 6px;
+    text-decoration: none;
+}
+code {
+    background-color: black;
+    border-radius: 4px;
+    display: block;
+    color: white;
+    font-size: 2rem;
+    padding: 12px;
+}
+xmp {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    font-size: 1.4rem;
+    margin-top: 0px;
+    padding: 14px;
+}
