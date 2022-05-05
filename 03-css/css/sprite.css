@@ -1,0 +1,56 @@
+
+body {
+    background-color: #17a053;
+}
+
+nav a:link,
+nav a:visited {
+    background-color: #00000099;
+    border-bottom: 4px solid #ffffff;
+    margin: 8px 10px;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+ nav a:hover {
+    background-color: #000000bb;
+    border-bottom: 4px solid #fae101;
+}
+
+section.logo {
+    background: url(../images/spriteweb.png) no-repeat;
+    width: 180px;
+    height: 190px;
+    background-position: -18px -398px;
+}
+section {
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 230px;
+    width: 850px;
+}
+section div.box {
+    background: url(../images/spriteweb.png);
+    background-position: -500px -8px;
+    border: 2px solid white;
+    float: left;
+    width: 256px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    
+}
+section div h1 {
+    background-color: rgba(236, 217, 217, 0.486);
+    text-align: center;
+    height: 60px;
+    margin: 1px;
+}
+section div h1:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+section.spri {
+    background-color: rgba(0, 0, 0, 0.486);
+    height: 250px;
+    width: 850px;
+}
