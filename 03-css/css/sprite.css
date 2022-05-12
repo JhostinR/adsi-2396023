@@ -1,56 +1,175 @@
-
-body {
-    background-color: #17a053;
+body{
+    background-color:#17a053;
+    border: 10px solid #fff;
+    margin: 0;
+    min-height: 100vh;    
 }
-
-nav a:link,
-nav a:visited {
-    background-color: #00000099;
-    border-bottom: 4px solid #ffffff;
-    margin: 8px 10px;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    text-align: center;
+main{
+    margin: 0% auto;
+    width: 80%;
 }
- nav a:hover {
-    background-color: #000000bb;
-    border-bottom: 4px solid #fae101;
-}
-
-section.logo {
+main header div.logo{
     background: url(../images/spriteweb.png) no-repeat;
+    background-position: -20px -400px;
+    height: 180px;
+    margin: 0px auto;
     width: 180px;
-    height: 190px;
-    background-position: -18px -398px;
+
 }
-section {
-    background-color: rgba(0, 0, 0, 0.486);
-    height: 230px;
-    width: 850px;
+main header div.menu ul{
+    list-style: none;
+    margin: 0% auto;
+    padding: 0%;
+    width: 60%;
 }
-section div.box {
-    background: url(../images/spriteweb.png);
-    background-position: -500px -8px;
-    border: 2px solid white;
-    float: left;
-    width: 256px;
-    height: 200px;
-    margin: 10px;
-    float: left;
-    
+@media (max-width: 780px) {
+    main header div.menu ul li {
+        display: block;
+        width: 88%;
+    }
 }
-section div h1 {
-    background-color: rgba(236, 217, 217, 0.486);
+main section.gallery{
+    width: 70%;
+    margin: 40px auto;
+    background-color: #00000066;
+    border: 2px solid #ffdb249d;
+
+}
+main section.gallery div h3{
     text-align: center;
-    height: 60px;
-    margin: 1px;
+    font-family: Verdana;
+    background-color: #ffffff44;
+    padding: 20px;
+    margin: 0 auto; 
+    transition: 0.3s all ease-in;
 }
-section div h1:hover {
-    background-color: rgba(255, 255, 255, 0.767);
+main section div.gallery01:hover h3{
+    cursor: pointer;
+    background: #ffffff88;
 }
-section.spri {
-    background-color: rgba(0, 0, 0, 0.486);
-    height: 250px;
-    width: 850px;
+main section div.gallery02:hover h3{
+    cursor: pointer;
+    background: #ffffff88;
+}
+main section div.gallery03:hover h3{
+    cursor: pointer;
+    background: #ffffff88;
+}
+main section.gallery div{
+    
+    display: inline-block;
+    height: 200px;
+    width: 290px;
+    margin: 20px;
+    padding: 0%;
+    font-family: Verdana;
+    margin-left: 30px;
+    background: url(../images/spriteweb.png) no-repeat;
+    background-position: -500px -8px;
+    border: 2px solid white;   
+}
+main header div.menu ul li{
+    background-color: #00000066;
+    border-bottom: 4px solid #fff;
+    color: #fff;
+    font-family: Verdana;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    transition: 0.3s all ease-in;
+    text-align: center;
+    width: 120px;
+}
+main header div.menu ul li:hover {
+    background: #000000bb;
+    border-bottom: 4px solid gold;
+    cursor: pointer;
+}
+main section.content {
+background-color: #00000066;
+width: 70%;
+margin: 30px auto;
+padding: 10px;
+border: 2px solid #ffdb249d;
+}
+main section.content article{
+background-color: #fff;
+padding: 10px;
+margin-bottom: 20px;
+border: 2px solid navy;
+}
+main section.content article:last-child{
+margin-bottom: 0;
+}
+main section.content article div{
+display: inline-block;
+vertical-align: top;
+}
+main section.content div.image1{
+background: url(../images/spriteweb.png) no-repeat;
+background-position: -230px -489px;
+height: 100px;
+width: 217px;
+margin-top: 25px;
+transition: all 0.6s ease-in;
+}
+
+main section.content div.image2{
+background: url(../images/spriteweb.png) no-repeat;
+background-position: -30px -220px;
+height: 150px;
+width: 217px;
+margin-left: 50px;
+transition: all 0.6s ease-in;
+}
+main section.content div.text{
+width: 500px;
+height: 150px;
+font-family: Verdana;
+text-align: justify;
+line-height: 1.5rem;
+transition: all 0.6s ease-in;
+}
+main section.content div.text:hover{
+cursor: grab;
+color: #17a053;
+}
+main footer{
+  background-color: #fff;
+  margin: 30px auto;
+  width: 70%;
+  height: 250px;
+  border: 2px solid navy;
+}
+main footer div.logo2{
+  background: url(../images/spriteweb.png) no-repeat;
+  background-position: -470px -420px;
+  height: 180px;
+  margin: 0 auto;
+  width: 300px;
+  
+}
+main footer div.footer ul{
+    list-style: none;
+    margin: 0% auto;
+    padding: 0%;
+    width: 80%;
+}
+main footer div.footer ul li{
+  display: inline-block;
+  background-color: #fff;
+  font-family: Verdana;
+  margin-top: 4px;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  transition: 0.3s all ease-in;
+  text-align: center;
+  width: 120px;
+  color: navy;
+}
+main footer div.footer ul li:hover {
+    background: #fff;
+    border-bottom: 6px solid #17a053;
+    cursor: pointer;
 }
