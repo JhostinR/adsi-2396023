@@ -7,9 +7,11 @@
     <title>Main Menu (ADSI 2396023)</title>
     <style>
     body {
-        background: linear-gradient(rgb(100, 250, 0), rgb(0, 0, 0));
-        font-family: Arial;
-        color: rgb(255, 255, 255);
+        background: linear-gradient(rgb(0, 212, 250), rgb(0, 0, 0));
+        font-family:Helvetica;
+        border: 8px solid black;
+        margin: 0 auto;
+        color: black;
         height: 100vh;
     }
     h1 {
@@ -30,14 +32,15 @@
      li a:link,
      li a:visited {
         text-decoration: none;
-        color: rgb(255, 255, 255);
+        color: black;
         display: block;
         padding: 20px;
-        transition: all 0.2s ease-in;
     }
     li a:hover {
-        background-color: #999;
+        background-color: cyan;
         color: rgb(255, 255, 255);
+        transform: rotateY(1800deg);
+        transition: all 1s ease-in;
     }
    </style> 
 </head> 
@@ -49,13 +52,14 @@
         </header>
         <nav>
             <li>
-                <a href="01-emmet/"><i>01</i> EMMET </a>
+                <a href="01-emmet/"><strong><i>01</i> EMMET</a>
             </li>
             <li>
-                <a href="02-html/"><i>02</i> HTML </a>
+                <a href="02-html/"><i>02</i> HTML</a>
             </li>
             <li>
-                <a href="03-css/"> <i>03</i> CSS </a>
+                <a href="03-css/"> <i>03</i> CSS</a>
+            </strong>
             </li>
     </main>
 </body>
