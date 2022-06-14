@@ -1,0 +1,10 @@
+body {
+    background-color: #fff;
+}
+figure.logo {
+    background: url(../imgs/Dragon_Ball_Z_Logo.jpg) no-repeat center;
+    height: 200px;
+}
+figure.logo1 {
+    background-size: contain;
+}
