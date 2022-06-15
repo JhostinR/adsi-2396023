@@ -1,10 +1,71 @@
 body {
-    background-color: #fff;
+    background:url(../imgs/bg.jpg) no-repeat;
+    background-size: cover;
+    border: 5px solid white;
+    border-radius:50px;
 }
-figure.logo {
-    background: url(../imgs/Dragon_Ball_Z_Logo.jpg) no-repeat center;
-    height: 200px;
+main header.logo {
+    background: url(../imgs/title.png) no-repeat center;
+    height: 300px;
+    width: 1550px;
+    display: inline-block;
+    margin: 0px auto;
+    margin-left: 170px;
+    display: inline-block;
 }
-figure.logo1 {
-    background-size: contain;
+section.gallery {
+    width: 1400px;
+    height: 390px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
 }
+section div.gallery1 {
+    height: 400px;
+    width:  300px;
+    display: inline-block;
+    background: url(../imgs/naruto1.webp) no-repeat center /cover;
+    background-size: cover;
+    margin: 20px;
+}
+section div.gallery2 {
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    background: url(../imgs/naruto2.jpg) no-repeat center;
+    background-size: cover;
+    margin: 20px;
+}
+section div.gallery3 {
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    background: url(../imgs/vegeta0.jpg) no-repeat center;
+    background-size: cover;
+    margin: 20px;
+}
+section div.gallery4 {
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    background: url(../imgs/nn.jpg) no-repeat center;
+    background-size: cover;
+    margin: 20px;
+}
+main section.gallery div h3 {
+    text-align: center;
+    line-height: 3.5 rem;
+    background-color: rgba(253, 197, 197, 0.527);
+    width: 300px;
+    height: 50px;
+    margin-top: 0px;
+    position: absolute;
+    bottom: -20px;
+    transition: 0.5s ease-in;
+}
+main section.gallery div:hover h3{
+    bottom: -20px;
+    background-color: rgba(252, 117, 117, 0.356);
+    height: 70px;
+  }
