@@ -1,17 +1,14 @@
 body {
     background:url(../imgs/bg.jpg) no-repeat;
     background-size: cover;
-    border: 5px solid white;
-    border-radius:50px;
+    border: 5px solid rgb(145, 2, 2);
+    min-height: 100vh;
 }
 main header.logo {
     background: url(../imgs/title.png) no-repeat center;
     height: 300px;
-    width: 1550px;
-    display: inline-block;
-    margin: 0px auto;
-    margin-left: 170px;
-    display: inline-block;
+    width: 800px;
+    margin: 0 auto;
 }
 section.gallery {
     width: 1400px;
@@ -19,7 +16,6 @@ section.gallery {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    color: #fff;
 }
 section div.gallery1 {
     height: 400px;
@@ -28,6 +24,8 @@ section div.gallery1 {
     background: url(../imgs/naruto1.webp) no-repeat center /cover;
     background-size: cover;
     margin: 20px;
+    position: relative;
+    box-shadow: 5px 5px 12px 2px #000;
 }
 section div.gallery2 {
     height: 400px;
@@ -36,36 +34,199 @@ section div.gallery2 {
     background: url(../imgs/naruto2.jpg) no-repeat center;
     background-size: cover;
     margin: 20px;
+    position: relative;
+    box-shadow: 5px 5px 12px 2px #000;
+
 }
 section div.gallery3 {
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    background: url(../imgs/vegeta0.png) no-repeat center;
+    background-size: cover;
+    margin: 20px;
+    position: relative;
+    box-shadow: 5px 5px 12px 2px #000;
+
+}
+section div.gallery4 {
     height: 400px;
     width: 300px;
     display: inline-block;
     background: url(../imgs/vegeta0.jpg) no-repeat center;
     background-size: cover;
     margin: 20px;
-}
-section div.gallery4 {
-    height: 400px;
-    width: 300px;
-    display: inline-block;
-    background: url(../imgs/nn.jpg) no-repeat center;
-    background-size: cover;
-    margin: 20px;
+    position: relative;
+    box-shadow: 5px 5px 12px 2px #000;
+
 }
 main section.gallery div h3 {
     text-align: center;
     line-height: 3.5 rem;
-    background-color: rgba(253, 197, 197, 0.527);
-    width: 300px;
-    height: 50px;
-    margin-top: 0px;
-    position: absolute;
     bottom: -20px;
-    transition: 0.5s ease-in;
+    background-color: rgba(15, 15, 15, 0.527);
+    width: 300px;
+    height: 80px;
+    margin-top: 100px;
+    position: absolute;
+    transition: 0.5s all ease-in;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkred;
 }
 main section.gallery div:hover h3{
-    bottom: -20px;
-    background-color: rgba(252, 117, 117, 0.356);
-    height: 70px;
+    background-color: rgba(253, 2, 2, 0.137);
+    color:  antiquewhite;
+    height: 400px;
   }
+  main article.itachi {
+    margin-top: 50px;
+    border: 2px dotted #f8040488;
+    width:1330px;
+    height: 250px;
+    margin:20px auto;
+}
+main article div.itachi {
+    background: url(../imgs/itachi.jpg) no-repeat;
+    display: inline-block;
+    vertical-align:auto;
+    width: 250px;
+    height: 250px;
+    background-size: 300px;
+}
+main article div.text1 {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: top;
+    width: 1076px;
+    height: 250px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main article.madara {
+    margin-top: 50px;
+    border: 2px dotted #f8040488;
+    width: 1330px;
+    height: 250px;
+    margin-left: 265px;
+    margin: 20px auto;
+}
+main article div.madara {
+    background: url(../imgs/madara.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: auto;
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+}
+main article div.text2 {
+    display: inline-block;
+    margin: 0 auto;
+    vertical-align: top;
+    width: 1076px;
+    height: 250px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main article div.text1:hover {
+    color: antiquewhite;
+}
+main article div.text2:hover {
+    color: antiquewhite;
+}
+
+@media(max-width: 1430px) {
+    section.gallery {
+        width: 690px;
+        height: 910px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    main section.gallery div h3 {
+        text-align: center;
+        line-height: 3.5 rem;
+        background-color: rgba(15, 15, 15, 0.527);
+        width: 300px;
+        height: 50px;
+        margin-top: 100px auto;
+        position: absolute;
+        transition: 0.5s ease-in;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: darkred;
+    }
+    main section.gallery div:hover h3{
+        background-color: rgba(253, 2, 2, 0.356);
+        color:  antiquewhite;
+    }
+    }
+    @media(max-width: 800px) {
+        main header.logo {
+            background: url(../imgs/title.png) no-repeat center;
+            height: 300px;
+            width: 500px;
+            margin: 0 auto;
+        }
+        section.gallery {
+            width: 500px;
+            height: 1800px;
+            margin-left: 90px;
+            overflow: hidden;
+            position: relative;
+        }
+        main section.gallery div h3 {
+            text-align: center;
+            line-height: 3.5 rem;
+            background-color: rgba(15, 15, 15, 0.527);
+            width: 300px;
+            height: 50px;
+            margin-top: 0px;
+            position: absolute;
+            bottom: -20px;
+            transition: 0.5s ease-in;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: darkred;
+        
+        }
+        main section.gallery div:hover h3{
+            bottom: -20px;
+            background-color: rgba(253, 2, 2, 0.356);
+            height: 70px;
+            color:  antiquewhite;
+        }
+        main article.itachi {
+            margin-top: 50px;
+            border: 2px dotted #f8040488;
+            width: 250px;
+            height: 500px;
+            margin:20px auto;
+        }
+        main article div.text1 {
+            display: inline-block;
+            margin: 0 auto;
+            vertical-align: top;
+            width: 240px;
+            height: 250px;
+            text-align: justify;
+            overflow-y: scroll;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        main article.madara {
+            margin-top: 50px;
+            border: 2px dotted #f8040488;
+            width: 250px;
+            height: 500px;
+            margin-left: 265px;
+            margin: 20px auto;
+        }
+        main article div.text2 {
+            display: inline-block;
+            margin: 0 auto;
+            vertical-align: top;
+            width: 240px;
+            height: 250px;
+            text-align: justify;
+            overflow-y: scroll;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        }
+
