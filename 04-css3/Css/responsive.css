@@ -8,7 +8,7 @@ main header.logo {
     background: url(../imgs/title.png) no-repeat center;
     height: 300px;
     width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 section.gallery {
     width: 1400px;
