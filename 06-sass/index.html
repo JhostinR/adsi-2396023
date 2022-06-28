@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAIN MENU (SASS)</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+      body {
+          text-align: center;       
+          font-family: poppins, sans;
+          color: #fff;
+          background:  #ff99cc url(imgs/saz.png) no-repeat center;
+          background-size: contain;
+          min-height: 100vh;
+          color: #cd579f
+      }
+      
+      ul.links {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+          gap: 10px;
+      }
+      ul.links li a:link,
+      ul.links li a:visited {
+          background-color: #ffffff11;
+          border: 2px solid #cd579f ;
+          display: flex;
+          border-radius: 20px;
+          color: #a03978;
+          padding: 4px 16px;
+          text-decoration: none;
+          transition: all 0.2s ease-in;
+          width: 200px;
+          margin: 0 auto;
+      }
+      ul.links li a:hover {
+          background-color:#ffffff99;
+      }
+    </style>
+  </head>
+  <body> 
+    <h1>MAIN MENU (SASS)</h1>
+    <ul class="links">
+      <li><a href="01-nest.html" target="_blank">01-nest </a></li>
+      <li><a href="02-parent.html" target="_blank">02-parent</a></li>
+      <li><a href="03-comments.html" target="_blank">03-comments</a></li>
+      <li><a href="04-variables.html" target="_blank">04-variables</a></li>
+      <li><a href="05-import.html" target="_blank">05-Import</a></li>
+      <li><a href="06-inheritance.html" target="_blank">06-Inheritance</a></li>
+      <li><a href="07-conditionals.html" target="_blank">07-Conditionals</a></li>
+      <li><a href="08-loops.html" target="_blank">08-Loops</a></li>
+      <li><a href="09-mixins.html" target="_blank">09-Mixins</a></li>
+      <li><a href="10-challenge-menuburger.html"target="_blank">10-Challenge</a></li>
+    </ul>
+  </body>
+</html>
