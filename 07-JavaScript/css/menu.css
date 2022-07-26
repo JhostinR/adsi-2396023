@@ -28,6 +28,7 @@ header h1 {
     justify-content: center;
     align-items: center;
     display: flex;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 header h1 a:link,
 header h1 a:visited {
@@ -93,6 +94,7 @@ nav li a:hover i {
 }
 section {
     padding: 1.2rem;
+    color: #f7de1f;
 }
 section h1,
 section h2 {
