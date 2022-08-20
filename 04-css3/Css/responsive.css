@@ -81,7 +81,7 @@ main section.gallery div:hover h3{
   main article.itachi {
     margin-top: 50px;
     border: 2px dotted #f8040488;
-    width:1330px;
+    width:1310px;
     height: 250px;
     margin:20px auto;
 }
@@ -97,7 +97,7 @@ main article div.text1 {
     display: inline-block;
     margin: 0 auto;
     vertical-align: top;
-    width: 1076px;
+    width: 1050px;
     height: 250px;
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -105,7 +105,7 @@ main article div.text1 {
 main article.madara {
     margin-top: 50px;
     border: 2px dotted #f8040488;
-    width: 1330px;
+    width: 1310px;
     height: 250px;
     margin-left: 265px;
     margin: 20px auto;
@@ -122,7 +122,7 @@ main article div.text2 {
     display: inline-block;
     margin: 0 auto;
     vertical-align: top;
-    width: 1076px;
+    width: 1050px;
     height: 250px;
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
