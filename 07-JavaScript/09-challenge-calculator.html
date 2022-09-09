@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Calculator</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <style>
+        main {
+            background: url(imgs/calculator/bg-light.svg) no-repeat center;
+        }
+        header h1 a:is(:link) {
+            color: black;
+            margin-top: 40px;
+        }
+        header button.mode {
+            border: none;
+            background: url(imgs/calculator/btn-light.svg) no-repeat center;
+            height: 40px;
+            display: block;
+            margin: 0 auto;
+            transition: all 0.2s ease-in;
+            width: 120px;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+        header button.mode:is(:hover, :focus) {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        div.display {
+            display: flex;
+            flex-direction: column;
+            margin: -15.5px 30px;
+            text-align: right;
+        }
+        div.display output.operation {
+            font-weight: 275;
+            font-size: 28px;
+            color: #6E768A;
+        }
+        div.display output.result {
+            font-weight: 275;
+            font-size: 54px;
+            color: #B6B9C7;
+        }
+        div.buttons {
+            display: grid;
+            gap: 0px;
+            margin-top: 15px;
+            justify-content: center;
+            grid-template-columns: repeat(4, 90px);
+            grid-template-rows: repeat(5, 90px);
+        }
+        div.buttons button {
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease-in;
+        }
+        div.buttons button.clear {
+            background: url(imgs/calculator/clean.svg) no-repeat center;
+        }
+        div.buttons button.back {
+            background: url(imgs/calculator/back.svg) no-repeat center;
+        }
+        div.buttons button.pow {
+            background: url(imgs/calculator/elevado.svg) no-repeat center;
+        }
+        div.buttons button.div {
+            background: url(imgs/calculator/division.svg) no-repeat center;
+        }
+        div.buttons button.uno {
+            background: url(imgs/calculator/1.svg) no-repeat center;
+        }
+        div.buttons button.dos {
+            background: url(imgs/calculator/2.svg) no-repeat center;
+        }
+        div.buttons button.tres {
+            background: url(imgs/calculator/3.svg) no-repeat center;
+        }
+        div.buttons button.multiplicacion {
+            background: url(imgs/calculator/multiplicacion.svg) no-repeat center;
+        }
+        div.buttons button.cuatro {
+            background: url(imgs/calculator/4.svg) no-repeat center;
+        }
+        div.buttons button.cinco {
+            background: url(imgs/calculator/5.svg) no-repeat center;
+        }
+        div.buttons button.seis {
+            background: url(imgs/calculator/6.svg) no-repeat center;
+        }
+        div.buttons button.suma {
+            background: url(imgs/calculator/suma.svg) no-repeat center;
+        }
+        div.buttons button.siete {
+            background: url(imgs/calculator/7.svg) no-repeat center;
+        }
+        div.buttons button.ocho {
+            background: url(imgs/calculator/8.svg) no-repeat center;
+        }
+        div.buttons button.nueve {
+            background: url(imgs/calculator/9.svg) no-repeat center;
+        }
+        div.buttons button.resta {
+            background: url(imgs/calculator/resta.svg) no-repeat center;
+        }
+        div.buttons button.punto {
+            background: url(imgs/calculator/punto.svg) no-repeat center;
+        }
+        div.buttons button.cero {
+            background: url(imgs/calculator/cero.svg) no-repeat center;
+        }
+        div.buttons button.porcentaje {
+            background: url(imgs/calculator/porcentaje.svg) no-repeat center;
+        }
+        div.buttons button.igual {
+            background: url(imgs/calculator/igual.svg) no-repeat center;
+        }
+        div.buttons button:is(:hover, :focus) {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </h1>
+            <button class="mode"></button>
+        </header>
+        <section>
+            <div class="display">
+                <output class="operation">125.000 + 125.000</output>
+                <output class="result">250.000</output>
+            </div>
+            <div class="buttons">
+                <button class="clear"></button>
+                <button class="back"></button>
+                <button class="pow"></button>
+                <button class="div"></button>
+                <button class="uno"></button>
+                <button class="dos"></button>
+                <button class="tres"></button>
+                <button class="multiplicacion"></button>
+                <button class="cuatro"></button>
+                <button class="cinco"></button>
+                <button class="seis"></button>
+                <button class="suma"></button>
+                <button class="siete"></button>
+                <button class="ocho"></button>
+                <button class="nueve"></button>
+                <button class="resta"></button>
+                <button class="punto"></button>
+                <button class="cero"></button>
+                <button class="porcentaje"></button>
+                <button class="igual"></button>
+            </div>
+        </section>
+    </main>
+    <script>
+
+    </script>
+</body>
+</html>
