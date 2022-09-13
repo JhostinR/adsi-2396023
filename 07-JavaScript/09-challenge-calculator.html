@@ -7,11 +7,25 @@
     <title>Challenge Calculator</title>
     <link rel="stylesheet" href="css/menu.css">
     <style>
+        /*Dark mode*/
+        main.dark {
+            background: url(imgs/calculator/bg-dark.svg) no-repeat center;
+
+        }
+        main.dark header button.mode {
+            border: none;
+            background: url(imgs/calculator/btn-dark.svg) no-repeat center;
+        }
+        main.dark header h1 a:is(:link) {
+            color: #39adff;
+            margin-top: 40px;
+        }
+        /*Light mode*/
         main {
             background: url(imgs/calculator/bg-light.svg) no-repeat center;
         }
         header h1 a:is(:link) {
-            color: black;
+            color: #FF3939;
             margin-top: 40px;
         }
         header button.mode {
@@ -58,6 +72,71 @@
             border: none;
             transition: all 0.2s ease-in;
         }
+        /*Black mode*/
+        main.dark div.buttons button.clear {
+            background: url(imgs/calculator/clean-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.back {
+            background: url(imgs/calculator/back-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.pow {
+            background: url(imgs/calculator/elevado-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.div {
+            background: url(imgs/calculator/division-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.uno {
+            background: url(imgs/calculator/uno-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.dos {
+            background: url(imgs/calculator/dos-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.tres {
+            background: url(imgs/calculator/tres-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.multiplicacion {
+            background: url(imgs/calculator/multiplicacion-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.cuatro {
+            background: url(imgs/calculator/cuatro-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.cinco {
+            background: url(imgs/calculator/cinco-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.seis {
+            background: url(imgs/calculator/seis-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.suma {
+            background: url(imgs/calculator/suma-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.siete {
+            background: url(imgs/calculator/siete-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.ocho {
+            background: url(imgs/calculator/ocho-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.nueve {
+            background: url(imgs/calculator/nueve-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.resta {
+            background: url(imgs/calculator/resta-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.punto {
+            background: url(imgs/calculator/punto-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.cero {
+            background: url(imgs/calculator/cero-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.porcentaje {
+            background: url(imgs/calculator/porcentaje-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button.igual {
+            background: url(imgs/calculator/igual-dark.svg) no-repeat center;
+        }
+        main.dark div.buttons button:is(:hover, :focus) {
+            transform: scale(1.1);
+        }
+        /*light mode*/
         div.buttons button.clear {
             background: url(imgs/calculator/clean.svg) no-repeat center;
         }
@@ -165,6 +244,13 @@
         </section>
     </main>
     <script>
+        const mode = document.querySelector('.mode')
+        const main = document.querySelector('main')
+
+        mode.addEventListener('click', (e) => { 
+            main.classList.toggle('dark')
+           
+        })
 
     </script>
 </body>
