@@ -244,10 +244,12 @@
         </section>
     </main>
     <script>
+        //buttons
         const mode  = document.querySelector('.mode')
         const main  = document.querySelector('main')
         const oper  = document.querySelector('.operation')
         const clear = document.querySelector('.clear')
+        const back  = document.querySelector('.back')
         //Numbers & operations
         const nums = document.querySelectorAll('button[data-num]')
         const oprs = document.querySelectorAll('button[data-opr]')
@@ -276,17 +278,25 @@
                     }
                 }
             }) 
-        })  
-        
+        })
+
         //-----------
-        clear.addEventListener('click', () => { 
+            clear.addEventListener('click', () => { 
             oper.textContent = ''
         })
-        
+           
         //-----------
-        mode.addEventListener('click', (e) => { 
+            mode.addEventListener('click', (e) => { 
             main.classList.toggle('dark')
         })
+
+        back.addEventListener('click', () => {
+            oper.textContent =oper.textContent.slice(0, -1)
+            if(isNaN(oper.textContent.slice(-1))){
+            operStatus = false
+            }
+            })
+        
         //KeyUp
         document.addEventListener('keyup', (evt) => {
             console.log(evt.keyCode)
@@ -333,6 +343,7 @@
                 break;
             }
         })
+
     </script>
 </body>
 </html>
