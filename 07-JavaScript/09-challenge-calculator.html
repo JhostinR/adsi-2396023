@@ -19,6 +19,16 @@
             color: #39adff;
             margin-top: 40px;
         }
+        main.dark div.display output.operation {
+            font-weight: 275;
+            font-size: 28px;
+            color: deepskyblue;
+        }
+        main.dark div.display output.result {
+            font-weight: 275;
+            font-size: 54px;
+            color: #efeff3;
+        }
         /*Light mode*/
         main {
             background: url(imgs/calculator/bg-light.svg) no-repeat center;
@@ -52,12 +62,12 @@
         div.display output.operation {
             font-weight: 275;
             font-size: 28px;
-            color: #6E768A;
+            color: #FF3930;
         }
         div.display output.result {
             font-weight: 275;
             font-size: 54px;
-            color: #B6B9C7;
+            color: black;
         }
         div.buttons {
             display: grid;
@@ -250,6 +260,8 @@
         const oper  = document.querySelector('.operation')
         const clear = document.querySelector('.clear')
         const back  = document.querySelector('.back')
+        const resultado = document.querySelector('.result')
+        const result = document.querySelector('.igual')
         //Numbers & operations
         const nums = document.querySelectorAll('button[data-num]')
         const oprs = document.querySelectorAll('button[data-opr]')
@@ -296,6 +308,10 @@
             operStatus = false
             }
             })
+
+        result.addEventListener('click', () => {
+            resultado.textContent = eval (oper.textContent)
+        })
         
         //KeyUp
         document.addEventListener('keyup', (evt) => {
