@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick & Morty API Rest</title>
+    <style>
+        body {
+            background: linear-gradient(aquamarine, cyan);
+            border-radius: 15px 0px;
+        }
+        ul.characters {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 1rem;
+         list-style: none;
+         padding: 0;
+         font-family: 'Franklin Gothic Medium';
+         color: rgb(22, 114, 34);
+        }
+        ul.characters li {
+            background-color: rgb(1, 165, 138);
+            border-radius: 15px 0px;
+            border: 3px solid rgba(0, 255, 128, 0.836);
+            height: 490px;
+            text-align: center;
+        }
+        ul.characters li:hover {
+            color: rgba(0, 255, 128, 0.836);
+            transition: 0.4s all ease-in;
+        }
+        ul.characters li button {
+            border-bottom: 2px;
+            border-radius: 10px 0px;
+            font-family:fantasy;
+            cursor: pointer;
+            background-color: rgba(53, 252, 4, 0.24);
+            margin: 0 auto;
+        }
+        ul.characters li button:hover {
+            background: green;
+            transition: 0.5s all ease-in;
+            color: white;
+        }
+        @media screen and (max-width: 1024px) {
+         ul.characters {
+         grid-template-columns: repeat(2, 1fr);
+        } 
+        }
+        @media screen and (max-width: 660px) {
+         ul.characters {
+         grid-template-columns: repeat(1, 1fr);
+        } 
+        }
+    </style>
+</head>
+<body>
+    <ul class="characters"></ul>
+    <script>
+        const characters = document.querySelector('.characters')
+        const btnshow = document.querySelectorAll('.btnshow')
+
+        async function getCharacters() {
+            for (let i = 1; i <= 40; i++)  { 
+            let resp = await fetch('https://rickandmortyapi.com/api/character/' + i)
+            let char = await resp.json()
+            console.log(char)
+            characters.innerHTML += `<li> 
+                                    <h2>
+                                    ${char.id} 
+                                    ${char.name}
+                                    </h2>
+                                    <img src="${char.image}">
+                                    <h4> Gender: ${char.gender} </h4>
+                                    <h4> Status: ${char.status} </h4>
+                                    <button data-id='${char.id}' class="btnshow"> show + </button>
+                                    </li>`
+            if (i == 40) {
+                addClickEvents()
+            }
+            //characters.textContent = JSON.stringify(chars)
+        }
+        }
+        function addClickEvents() {
+            const btnshow = document.querySelectorAll('.btnshow')
+            btnshow.forEach(element => {
+                element.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    alert(element.dataset.id)
+                })
+            })
+        }
+        getCharacters()
+    </script>
+</body>
+</html>
